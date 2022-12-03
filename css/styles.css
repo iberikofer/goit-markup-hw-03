@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   color: var(--first-color);
   background-color: var(--fifth-color);
-  background-color: silver;
+  /* background-color: silver; */
 }
 
 li {
@@ -42,7 +42,7 @@ button {
 
 .container {
   margin: 0 auto;
-  max-width: 1158px;
+  max-width: 1128px;
 }
 
 .navigation-block {
@@ -153,7 +153,10 @@ button {
   border-width: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px 16px 32px;
-  margin: 48px 0px 0px 0px;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
 .hero-button:hover {
@@ -168,7 +171,6 @@ button {
 
 .features {
   display: flex;
-  max-width: 1128px;
   justify-content: center;
 }
 
@@ -184,6 +186,33 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+}
+
+.team-goals,
+.goals {
+  display: flex;
+}
+
+.team-goals {
+  flex-direction: column;
+}
+
+.goals {
+  margin-top: 72px;
+}
+
+.team-reveal,
+.team-cards {
+  display: flex;
+}
+
+.team-cards {
+  margin-top: 72px;
+}
+
+.info {
+  margin: 32px;
+  text-align: center;
 }
 
 .heading,
@@ -202,22 +231,20 @@ button {
   letter-spacing: 0.02em;
 }
 
-.photo-card {
-  display: inline-block;
-  margin-right: 24px;
-}
-
 .crew {
-  text-align: center;
+  margin-right: 24px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.16),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .position {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 8px;
 }
+
+/* portfolio */
 
 .filter-button {
   font-family: inherit;
