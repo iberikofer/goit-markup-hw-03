@@ -41,18 +41,14 @@ button {
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1158px;
-  justify-content: center;
 }
 
 .navigation-block {
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 72px;
-}
-
-.navigation {
-  margin-right: 331px;
 }
 
 .navigation > a {
@@ -142,7 +138,6 @@ button {
   line-height: 1.07;
   max-width: 492px;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
   text-align: center;
 }
 
@@ -158,6 +153,7 @@ button {
   border-width: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px 16px 32px;
+  margin: 48px 0px 0px 0px;
 }
 
 .hero-button:hover {
