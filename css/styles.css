@@ -33,6 +33,11 @@ button {
   cursor: pointer;
 }
 
+.navigation-block {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .navigation-block,
 .navigation,
 .navigation-list,
@@ -40,20 +45,24 @@ button {
   display: flex;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1128px;
+.navigation {
+  display: flex;
 }
 
 .navigation-block {
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 72px;
 }
 
 .navigation-list > li:not(:last-child),
 .contacts > li:not(:last-child) {
   margin-right: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1128px;
 }
 
 .logo {
@@ -185,12 +194,10 @@ button {
   flex-direction: column;
 }
 
-.goals {
+.goals-list {
   margin-top: 72px;
-}
-
-.photo-card {
-  padding: 12px;
+  display: flex;
+  gap: 24px;
 }
 
 .team-reveal,
@@ -200,12 +207,15 @@ button {
 
 .team-cards {
   margin-top: 72px;
-  padding: 12px;
+  gap: 24px;
 }
 
 .info {
-  margin: 32px 60px 32px 60px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px 0px;
+  gap: 8px;
 }
 
 .heading,
@@ -228,13 +238,15 @@ button {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-  margin-right: 24px;
+}
+
+.crew > img {
+  display: block;
 }
 
 .position {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 8px;
 }
 
 /* portfolio */
@@ -286,20 +298,18 @@ button {
   color: var(--second-color);
 }
 
+/* footer  */
+
 footer {
   background-color: var(--first-color);
-  height: 310px;
-}
-
-.reversed-header {
-  display: flex;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 16px;
+  gap: 16px;
+  padding: 100px 0px;
 }
 
 .logo-footer {
