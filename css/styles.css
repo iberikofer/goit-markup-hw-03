@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   color: var(--first-color);
   background-color: var(--fifth-color);
-  background-color: silver;
+  /* background-color: silver; */
 }
 
 li {
@@ -31,6 +31,15 @@ a {
 
 button {
   cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1158px;
+}
+
+.section {
+  padding: 120px 0px 120px 0px;
 }
 
 .navigation-block {
@@ -47,6 +56,7 @@ button {
 
 .navigation {
   display: flex;
+  gap: 77px;
 }
 
 .navigation-block {
@@ -55,14 +65,19 @@ button {
   align-items: center;
 }
 
-.navigation-list > li:not(:last-child),
-.contacts > li:not(:last-child) {
-  margin-right: 40px;
+.revesed-footer {
+  display: flex;
+  gap: 331px;
+  align-items: center;
+  padding: 24px 0px;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1128px;
+.navigation-list {
+  gap: 40px;
+}
+
+.contacts {
+  gap: 40px;
 }
 
 .logo {
@@ -72,7 +87,6 @@ button {
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  margin-right: 77px;
 }
 
 .logo-colored {
@@ -115,13 +129,9 @@ button {
   color: var(--logo-color);
 }
 
-.section {
-  padding: 120px 0px 120px 0px;
-}
-
 .head-hero {
   background-color: var(--first-color);
-  height: 603px;
+  padding: 192px 474px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,10 +183,7 @@ button {
 
 .feature-list {
   display: flex;
-}
-
-.feature-list > li:not(:last-child) {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .feature {
@@ -192,6 +199,7 @@ button {
 
 .team-goals {
   flex-direction: column;
+  padding: 0px 0px 120px;
 }
 
 .goals-list {
