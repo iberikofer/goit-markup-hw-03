@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   color: var(--first-color);
   background-color: var(--fifth-color);
-  /* background-color: silver; */
+  background-color: silver;
 }
 
 li {
@@ -51,10 +51,6 @@ button {
   height: 72px;
 }
 
-.navigation > a {
-  margin-right: 77px;
-}
-
 .navigation-list > li:not(:last-child),
 .contacts > li:not(:last-child) {
   margin-right: 40px;
@@ -67,6 +63,7 @@ button {
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.03em;
+  margin-right: 77px;
 }
 
 .logo-colored {
@@ -75,15 +72,6 @@ button {
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
-  letter-spacing: 0.03em;
-}
-
-.logo-footer {
-  color: var(--fourth-color);
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
@@ -201,6 +189,10 @@ button {
   margin-top: 72px;
 }
 
+.photo-card {
+  padding: 12px;
+}
+
 .team-reveal,
 .team-cards {
   display: flex;
@@ -208,10 +200,11 @@ button {
 
 .team-cards {
   margin-top: 72px;
+  padding: 12px;
 }
 
 .info {
-  margin: 32px;
+  margin: 32px 60px 32px 60px;
   text-align: center;
 }
 
@@ -232,7 +225,6 @@ button {
 }
 
 .crew {
-  margin-right: 24px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -295,6 +287,27 @@ button {
 
 footer {
   background-color: var(--first-color);
+  height: 310px;
+}
+
+.reversed-header {
+  display: flex;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.logo-footer {
+  color: var(--fourth-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .footer-text {
@@ -302,6 +315,7 @@ footer {
   color: var(--third-color);
   background-color: var(--first-color);
   letter-spacing: 0.02em;
+  width: 264px;
 }
 
 .hidden {
