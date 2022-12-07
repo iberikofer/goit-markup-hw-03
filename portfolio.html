@@ -45,115 +45,143 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="content-section section">
         <h2 class="hidden">Filter Buttons</h2>
-        <ul>
-          <li><button type="button" class="filter-button">All</button></li>
-          <li>
-            <button type="button" class="filter-button">Web Site</button>
-          </li>
-          <li><button type="button" class="filter-button">App</button></li>
-          <li>
-            <button type="button" class="filter-button">Design</button>
-          </li>
-          <li><button type="button" class="filter-button">Marketing</button></li>
-        </ul>
-        <h1 class="hidden">Features</h1>
-        <ul>
-          <li class="card">
-            <img
-              src="./images/app.jpg"
-              alt="Application interface"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Banking App Interface Concept</p>
-            <p class="photo-text">App</p>
-          </li>
-          <li class="card">
-            <img src="./images/qrpay.jpg" alt="Features" class="photo" width="360" height="300" />
-            <p class="photo-heading">Cashless Payment</p>
-            <p class="photo-text">Marketing</p>
-          </li>
-          <li class="card">
-            <img
-              src="./images/laptop&phone.jpg"
-              alt="A laptop and a phone screens with some quotes"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Meditaion App</p>
-            <p class="photo-text">App</p>
-          </li>
-          <li class="card">
-            <img
-              src="./images/torpedo.jpg"
-              alt="Сar front panel"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Taxi Service</p>
-            <p class="photo-text">Marketing</p>
-          </li>
-          <li class="card">
-            <img
-              src="./images/phone-wallpaper.jpg"
-              alt="Some pictures on a phone screen"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Screen Illustrations</p>
-            <p class="photo-text">Design</p>
-          </li>
-          <li class="card">
-            <img
-              src="./images/woman.jpg"
-              alt="A smiling woman with headphones, connected to a phone"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Online Courses</p>
-            <p class="photo-text">Marketing</p>
-          </li>
-          <li class="card">
-            <img
-              src="./images/insta_pics.jpg"
-              alt="Few designed pictures for instagram"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Instagram Stories Concept</p>
-            <p class="photo-text">Design</p>
-          </li>
-          <li class="card">
-            <img
-              src="./images/food.jpg"
-              alt="A women is hanging a bag with some food"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Organic Food</p>
-            <p class="photo-text">Web Site</p>
-          </li>
-          <li class="card">
-            <img
-              src="./images/coffee.jpg"
-              alt="Someone is drowing on a coffee, using milk"
-              class="photo"
-              width="360"
-              height="300"
-            />
-            <p class="photo-heading">Fresh Coffee</p>
-            <p class="photo-text">Web Site</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="button-list">
+            <li><button type="button" class="filter-button">All</button></li>
+            <li>
+              <button type="button" class="filter-button">Web Site</button>
+            </li>
+            <li><button type="button" class="filter-button">App</button></li>
+            <li>
+              <button type="button" class="filter-button">Design</button>
+            </li>
+            <li><button type="button" class="filter-button">Marketing</button></li>
+          </ul>
+          <h1 class="hidden">Features</h1>
+          <div class="cards">
+            <ul сlass="photo-list">
+              <li class="card card-margin">
+                <img
+                  src="./images/app.jpg"
+                  alt="Application interface"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Banking App Interface Concept</p>
+                  <p class="photo-text">App</p>
+                </div>
+              </li>
+              <li class="card card-margin">
+                <img
+                  src="./images/qrpay.jpg"
+                  alt="Features"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Cashless Payment</p>
+                  <p class="photo-text">Marketing</p>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="./images/laptop&phone.jpg"
+                  alt="A laptop and a phone screens with some quotes"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Meditaion App</p>
+                  <p class="photo-text">App</p>
+                </div>
+              </li>
+              <li class="card card-margin">
+                <img
+                  src="./images/torpedo.jpg"
+                  alt="Сar front panel"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Taxi Service</p>
+                  <p class="photo-text">Marketing</p>
+                </div>
+              </li>
+              <li class="card card-margin">
+                <img
+                  src="./images/phone-wallpaper.jpg"
+                  alt="Some pictures on a phone screen"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Screen Illustrations</p>
+                  <p class="photo-text">Design</p>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="./images/woman.jpg"
+                  alt="A smiling woman with headphones, connected to a phone"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Online Courses</p>
+                  <p class="photo-text">Marketing</p>
+                </div>
+              </li>
+              <li class="card card-margin">
+                <img
+                  src="./images/insta_pics.jpg"
+                  alt="Few designed pictures for instagram"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Instagram Stories Concept</p>
+                  <p class="photo-text">Design</p>
+                </div>
+              </li>
+              <li class="card card-margin">
+                <img
+                  src="./images/food.jpg"
+                  alt="A women is hanging a bag with some food"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Organic Food</p>
+                  <p class="photo-text">Web Site</p>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="./images/coffee.jpg"
+                  alt="Someone is drowing on a coffee, using milk"
+                  class="photo"
+                  width="360"
+                  height="300"
+                />
+                <div class="about-text">
+                  <p class="photo-heading">Fresh Coffee</p>
+                  <p class="photo-text">Web Site</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="reversed-header">

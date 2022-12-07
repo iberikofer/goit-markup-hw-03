@@ -6,10 +6,10 @@
 :root {
   --logo-color: #4d5ae5;
   --logo-color-2: #404bbf;
-  --first-color: #2e2f42;
-  --second-color: #434455;
-  --third-color: #e7e9fc;
-  --fourth-color: #f4f4fd;
+  --first-color: #2e2f42; /*navy blue*/
+  --second-color: #434455; /*slate*/
+  --third-color: #e7e9fc; /*cornflower*/
+  --fourth-color: #f4f4fd; /*cloud*/
   --fifth-color: #ffffff;
 }
 
@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   color: var(--first-color);
   background-color: var(--fifth-color);
-  /* background-color: silver; */
+  background-color: silver;
 }
 
 li {
@@ -259,6 +259,27 @@ button {
 
 /* portfolio */
 
+.content-section {
+  display: flex;
+  gap: 72px;
+}
+
+.cards {
+  display: flex;
+}
+
+.cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
 .filter-button {
   font-family: inherit;
   font-size: 16px;
@@ -287,12 +308,34 @@ button {
 }
 
 .card {
-  border-bottom: 0.5px solid #f4f4fd;
-}
-
-.photo {
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
+  flex-basis: calc(100% / 3 - 24px);
+}
+
+/* .card-margin {
+  margin-right: 24px;
+} */
+
+.card > img {
+  display: block;
+}
+
+.photo-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0px 32px 16px;
+  gap: 8px;
+  max-width: 300px;
 }
 
 .photo-heading {
