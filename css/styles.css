@@ -185,10 +185,11 @@ button {
   gap: 24px;
 }
 
-.feature {
+.feature-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+  margin-top: 8px;
 }
 
 .team-goals,
@@ -275,7 +276,7 @@ button {
   border-color: var(--third-color);
   border: 1px solid var(--third-color);
   border-radius: 4px;
-  padding: 8px 16px 8px 16px;
+  padding: 12px 24px;
 }
 
 .filter-button:hover {
@@ -306,7 +307,7 @@ button {
 
 .photo-list {
   display: flex;
-  gap: 24px;
+  gap: 48px 24px;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -338,7 +339,7 @@ footer {
 }
 
 .reversed-header {
-  padding: 100px 100px;
+  padding: 100px 0px;
 }
 
 .footer-content {
